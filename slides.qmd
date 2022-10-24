@@ -1,0 +1,297 @@
+---
+title: "Studying a concept in disarray: Cross-cultural, comparative analysis of digital privacy"
+subtitle: "Minerva-Gentner Symposium 2022 in Jerusalem"
+author: "Dmitry Epstein & Philipp K. Masur"
+format:
+  revealjs: 
+    theme: [default, theme.scss]
+    logo: https://comparativeprivacy.org/wp-content/uploads/2020/04/cropped-cprn_logo.png
+    background-transition: fade
+    title-slide-attributes:
+        data-background-image: https://comparativeprivacy.org/wp-content/uploads/2020/04/cropped-cprn_logo.png
+        data-background-position: "top right"
+        data-background-size: 20%
+editor: visual
+---
+
+# WELCOME TO JERUSALEM! {background="#43464B" background-image="img/jerusalem2.jpeg"}
+
+## Who are we?
+
+::: {.column width="45%"}
+![](https://comparativeprivacy.org/wp-content/uploads/2020/04/cropped-cprn_logo.png)
+
+<br>
+
+<https://www.comparativeprivacy.org>
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+### Goals and Aims
+
+1.  Research Infrastructure for comparative privacy research
+2.  Guidance, learning opportunities (e.g., workshops, preconferences)
+3.  Conducting comparative privacy research in line with our proposed framework
+4.  Long-term: Larger continuous longitudinal survey study (akin to the World Value Survey)
+:::
+
+## Overview of the Symposium
+
+| Date   | Time  | Program                                            |
+|:-------|:------|:---------------------------------------------------|
+| 26.10. | 08:30 | Coffee and Pastries                                |
+|        | 09:00 | Setting the day: The challenge of studying privacy |
+|        | 09:30 | Session I: Privacy across national borders         |
+|        | 10:45 | Coffee Break                                       |
+|        | 11:00 | Session II: Comparative cases                      |
+|        | 12:15 | Lunch Break                                        |
+|        | 13:30 | Keynote: Tanya Lokot                               |
+|        | 14:30 | Coffee Break                                       |
+|        | 14:45 | Workshop - Part A                                  |
+|        | 16:00 | Coffee Break                                       |
+|        | 16:15 | Workshop - Part B                                  |
+|        | 17:30 | Day Summary                                        |
+
+: {tbl-colwidths="[10,10, 80]"}
+
+## Overview of the Symposium
+
+| Date   | Time  | Program                                                          |
+|:---------------|:---------------|:---------------------------------------|
+| 27.10. | 08:30 | Coffee and Pastries                                              |
+|        | 09:00 | Setting the day: An agenda for comparative privacy research      |
+|        | 09:30 | Session I: New approaches to comparative privacy research        |
+|        | 10:45 | Coffee Break                                                     |
+|        | 11:00 | Session II: Most burning research questions in the coming years? |
+|        | 12:15 | Lunch Break                                                      |
+|        | 13:30 | Keynote: Tehilla Shwartz Altschuller                             |
+|        | 14:30 | Coffee Break                                                     |
+|        | 14:45 | Workshop - Part C                                                |
+|        | 16:00 | Coffee Break                                                     |
+|        | 14:45 | Workshop - Part D                                                |
+|        | 17:30 | Day Summary & Goodbyes                                           |
+
+: {tbl-colwidths="[10,10, 80]"}
+
+## Thank you!
+
+-   Minverva-Gentner Foundation for Israeli-German Science Exchange
+
+-   Federmann Cyber Security Research Center -- Cyber Law Program
+
+```{r, echo = F, }
+library(foreign)
+library(tidyverse)
+library(paletteer)
+library(forcats)
+library(stringi)
+library(psych)
+d <- read.spss("data/ZA7562_v1-0-0.sav", use.value.labels = F, to.data.frame = T)
+
+d <- d %>%
+  select(isocntry, qb10, qb14) %>%
+  mutate(concerns = ifelse(qb10 == 5, NA, qb10),
+         concerns = (concerns-5)*-1,
+         policy = ifelse(qb14 == 4, NA, qb14),
+         policy = (policy-4)*-1,)
+
+d$country = stri_trim(d$isocntry) 
+d$country[d$country %in% c("DE-E", "DE-W") ] = "DE"
+d$country[d$country %in% c("GB-GBN", "GB-NIR") ] = "UK"
+```
+
+## What do you think?
+
+::: {style="text-align: center;"}
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alwzaunbaxfybnyd5hgm2nxre8yuojoz/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+:::
+
+## Privacy concerns
+
+::: {style="text-align: center;"}
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alwzaunbaxfybnyd5hgm2nxre8yuojoz/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+:::
+
+## Privacy concerns
+
+```{r}
+#| fig-height: 4
+#| fig-width: 8
+d %>%
+  group_by(country) %>%
+  summarize(mean = mean(concerns, na.rm = T),
+            ul = mean + 1.95*describe(concerns)$se,
+            ll = mean - 1.95*describe(concerns)$se) %>%
+  ggplot(aes(x = reorder(country, -mean), y = mean, ymin = ll, ymax = ul)) +
+  geom_hline(yintercept = mean(d$concerns, na.rm = T), color = "grey", linetype = "dotted") +
+  geom_pointrange(color = "steelblue") +
+  ylim(1, 4) +
+  labs(subtitle = "1 = Not at all concerned to 4 = Very concerned", x = "", y = "Average concerns") +
+  theme_classic()
+```
+
+## Privacy concerns
+
+```{r}
+#| fig-height: 4
+#| fig-width: 8
+d %>%
+  group_by(country) %>%
+  summarize(mean = mean(concerns, na.rm = T),
+            ul = mean + 1.95*describe(concerns)$se,
+            ll = mean - 1.95*describe(concerns)$se) %>%
+  mutate(colour2 = ifelse(country == "DE" | country == "NL", "yes", "no")) %>%
+  ggplot(aes(x = reorder(country, -mean), y = mean, ymin = ll, ymax = ul)) +
+  geom_hline(yintercept = mean(d$concerns, na.rm = T), color = "grey", linetype = "dotted") +
+  geom_pointrange(aes(color = colour2)) +
+  annotate("text", x = "DE", y = 3, label = "Germany", color = "red") +
+  annotate("text", x = "NL", y = 2.8, label = "Netherlands", color = "red") +
+  ylim(1, 4) +
+  scale_color_manual(values = c("steelblue", "red")) +
+  labs(subtitle = "1 = Not at all concerned to 4 = Very concerned", x = "", y = "Average concerns") +
+  theme_classic() +
+  theme(legend.position = "none")
+```
+
+## Reading privacy policies
+
+::: {style="text-align: center;"}
+::: {style="position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;"}
+<iframe sandbox="allow-scripts allow-same-origin allow-presentation" allowfullscreen="true" allowtransparency="true" frameborder="0" height="315" src="https://www.mentimeter.com/app/presentation/alwzaunbaxfybnyd5hgm2nxre8yuojoz/embed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" width="420">
+
+</iframe>
+:::
+:::
+
+## Reading privacy policies
+
+```{r}
+##| fig-height: 4
+#| fig-width: 8
+d %>% 
+  group_by(country) %>%
+  summarize(mean = mean(policy, na.rm = T),
+            ul = mean + 1.95*describe(policy)$se,
+            ll = mean - 1.95*describe(policy)$se) %>%
+  ggplot(aes(x = reorder(country, -mean), y = mean, ymin = ll, ymax = ul)) +
+  geom_hline(yintercept = mean(d$policy, na.rm = T), color = "grey", linetype = "dotted") +
+  geom_pointrange(color = "steelblue") +
+  ylim(1, 3) +
+  labs(subtitle = "1 = Do not read at all to 3 = Read completely", x = "", y = "Average") +
+  theme_classic()
+```
+
+## Reading privacy policies
+
+```{r}
+#| fig-height: 4
+#| fig-width: 8
+d %>% 
+  group_by(country) %>%
+  summarize(mean = mean(policy, na.rm = T),
+            ul = mean + 1.95*describe(policy)$se,
+            ll = mean - 1.95*describe(policy)$se) %>%
+  mutate(colour2 = ifelse(country == "FR", "yes", "no")) %>%
+  ggplot(aes(x = reorder(country, -mean), y = mean, ymin = ll, ymax = ul)) +
+  geom_hline(yintercept = mean(d$policy, na.rm = T), color = "grey", linetype = "dotted") +
+  geom_pointrange(aes(color = colour2)) +
+  annotate("text", x = "FR", y = 1.8, label = "France", color = "red") +
+  ylim(1, 3) +
+  scale_color_manual(values = c("steelblue", "red")) +
+  labs(subtitle = "1 = Do not read at all to 3 = Read completely", x = "", y = "Average") +
+  theme_classic() +
+  theme(legend.position = "none")
+```
+
+## Cultures
+
+![](https://licensewithmosaiq.com/wp-content/uploads/2019/06/shutterstock_1303850926-1024x432.jpg)
+
+## Political Systems
+
+![](https://futuristspeaker.com/wp-content/uploads/2022/04/futurist-thomas-frey-democracy-vs-autocracy-what-does-the-future-hold.jpg)
+
+## Technological structures
+
+![](https://cdn.searchenginejournal.com/wp-content/uploads/2021/09/16-reasons-why-social-media-is-important-to-your-company-616d3200e6dc6-sej.png)
+
+## Much more to take into account
+
+-   Economies
+
+-   Social disparities
+
+-   Power imbalances
+
+-   Socio-Demographic differences
+
+-   ...
+
+## Comparative Privacy Research Framework
+
+Two important questions:
+
+<br>
+
+1.  What is the variable of interest?
+
+2.  What are meaningful units of comparison
+
+## Goals
+
+-   Identifying meaningful units of comparison
+
+-   Disentangling how these structures interact with privacy processes at micro, meso- and macro-levels
+
+-   Providing a framework and agenda for systematic comparative privacy research
+
+## Potential units of comparison
+
+![](img/units.png)
+
+## Comparative perspectives
+
+![](img/entanglement.png)
+
+## Comparative perspectives
+
+![](img/entanglement2.png)
+
+## Over the next two days...
+
+... we want to learn more about:
+
+<br>
+
+1.  "specific cases" (e.g., countries, platforms, groups...)
+
+2.  existing comparative projects and perspectives
+
+3.  comparative methodologies and related challenges and innovations
+
+4.  most important research questions that could benefit from a comparative perspective
+
+## In the workshops...
+
+... we are going to:
+
+1.  Generate ideas for comparative projects
+
+2.  Write first proposals
+
+3.  Pitch the ideas to the group
+
+4.  Hopefully provide inspiration for future collaboration
+
+# Thank you! {background-color="darkred"}
