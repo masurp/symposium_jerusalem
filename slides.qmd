@@ -94,6 +94,8 @@ Federmann Cyber Security Research Center -- Cyber Law Program
 
 ![](img/federman.png)
 
+:::
+
 ```{r, echo = F, }
 library(foreign)
 library(tidyverse)
