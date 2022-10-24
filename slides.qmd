@@ -78,9 +78,21 @@ editor: visual
 
 ## Thank you!
 
--   Minverva-Gentner Foundation for Israeli-German Science Exchange
+::: {.column width="45%"}
+Minverva-Gentner Foundation for Israeli-German Science Exchange
 
--   Federmann Cyber Security Research Center -- Cyber Law Program
+![](img/minverva.png)
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+
+Federmann Cyber Security Research Center -- Cyber Law Program
+
+![](img/federman.png)
 
 ```{r, echo = F, }
 library(foreign)
