@@ -48,12 +48,11 @@ editor: visual
 |        | 10:45 | Coffee Break                                       |
 |        | 11:00 | Session II: Comparative cases                      |
 |        | 12:15 | Lunch Break                                        |
-|        | 13:30 | Keynote: Tanya Lokot                               |
+|        | 13:30 | Workshop - Part A                                |
 |        | 14:30 | Coffee Break                                       |
-|        | 14:45 | Workshop - Part A                                  |
+|        | 14:45 | Workshop - Part B                              |
 |        | 16:00 | Coffee Break                                       |
-|        | 16:15 | Workshop - Part B                                  |
-|        | 17:30 | Day Summary                                        |
+|        | 16:15 | Day Summary                                        |
 
 : {tbl-colwidths="[10,10, 80]"}
 
@@ -77,6 +76,12 @@ editor: visual
 : {tbl-colwidths="[10,10, 80]"}
 
 ## Thank you!
+
+All members of the Comparative Privacy Research Framework
+  - Lemi Baruh 
+  - Christoph Lutz
+  - Kelly Quinn
+  - Carsten Wilhelm
 
 ::: {.column width="45%"}
 Minverva-Gentner Foundation for Israeli-German Science Exchange
@@ -237,6 +242,31 @@ d %>%
 
 _European Commission, 2019_
 
+# Is this meaningful comparative privacy research?{background-color="darkgrey"}
+
+## Specificity in privacy research
+
+- Despite a large and growing literature, the majority of studies on privacy  are mono-national
+- based on samples from Western,educated, industrialized, rich, and   democratic (WEIRD) societies (Henrich,  Heine  and  Nirenzayan  2010; Wu, Vitak and Zimmer 2020)
+- Findings from such studies are often overgeneralized and the role of specific cultural, social, political, economic, and technological   differences in shaping privacy-related outcomes are often neglected    
+
+## Value Proposition of Comparative Research
+
+A comparative understanding of privacy and associated processes...
+
+- would inform long-standing debates about why and under what circumstances privacy should be valued
+
+- aid the development of universally-applicable empirical approaches
+
+<br>
+
+It forces us to:
+
+- identify and describe differences and similarities
+
+- question whether theories of privacy developed in a specific culture can adequately explain the phenomenon in other communities, especially those which are marginalized or non-Western
+
+
 ## Cultures
 
 ![](https://licensewithmosaiq.com/wp-content/uploads/2019/06/shutterstock_1303850926-1024x432.jpg)
@@ -285,9 +315,41 @@ Two important questions:
 
 -   Providing a framework and agenda for systematic comparative privacy research
 
-## Potential units of comparison
+## Potentially meaningful units of comparison
 
 ![](img/units.png)
+
+## Over the next two days...
+
+... we want to learn more about:
+
+<br><br>
+
+1.  "specific cases" (e.g., countries, platforms, groups...)
+
+2.  existing comparative projects and perspectives
+
+3.  comparative methodologies and related challenges and innovations
+
+4.  most important research questions that could benefit from a comparative perspective
+
+## In the workshops...
+
+... we are going to:
+
+<br><br>
+
+1.  Generate ideas for comparative projects
+
+2.  Write first proposals
+
+3.  Pitch the ideas to the group
+
+4.  Hopefully provide inspiration for future collaboration
+
+
+# Thank you for coming! Let's begin...{background-color="darkgrey"}
+
 
 ## Comparative perspectives
 
@@ -331,32 +393,4 @@ _Epstein, Quinn & Masur, in prep_
 
 ![](img/entanglement2.png)
 
-## Over the next two days...
 
-... we want to learn more about:
-
-<br><br>
-
-1.  "specific cases" (e.g., countries, platforms, groups...)
-
-2.  existing comparative projects and perspectives
-
-3.  comparative methodologies and related challenges and innovations
-
-4.  most important research questions that could benefit from a comparative perspective
-
-## In the workshops...
-
-... we are going to:
-
-<br><br>
-
-1.  Generate ideas for comparative projects
-
-2.  Write first proposals
-
-3.  Pitch the ideas to the group
-
-4.  Hopefully provide inspiration for future collaboration
-
-# Thank you for coming! Let's begin...
