@@ -265,7 +265,7 @@ _European Commission, 2019_
 
 Two important questions:
 
-<br>
+<br><br>
 
 . . .
 
@@ -273,7 +273,9 @@ Two important questions:
 
 . . .
 
-### 2.  What are meaningful units of comparison
+<br>
+
+### 2.  What are meaningful units of comparison?
 
 ## Goals
 
@@ -313,6 +315,8 @@ Two important questions:
 
 ![](img/eurobarometer2.png)
 
+:::
+
 ## Comparative perspectives
 
 ![](img/entanglement1.png)
@@ -321,8 +325,9 @@ Two important questions:
 
 ![](img/moderation.png)
 
+_Epstein, Quinn & Masur, in prep_
 
-## Comparative perspectives
+## Comparative perspectives: Nested units
 
 ![](img/entanglement2.png)
 
