@@ -78,12 +78,18 @@ editor: visual
 ## Thank you!
 
 All members of the Comparative Privacy Research Framework
-  - Lemi Baruh 
-  - Christoph Lutz
-  - Kelly Quinn
-  - Carsten Wilhelm
+
+- Lemi Baruh 
+- Christoph Lutz
+- Kelly Quinn
+- Carsten Wilhelm
+
+for helping us organizing this symposium
+
+## Thanks
 
 ::: {.column width="45%"}
+
 Minverva-Gentner Foundation for Israeli-German Science Exchange
 
 ![](img/minverva.png)
@@ -247,7 +253,7 @@ _European Commission, 2019_
 ## Specificity in privacy research
 
 - Despite a large and growing literature, the majority of studies on privacy  are mono-national
-- based on samples from Western,educated, industrialized, rich, and   democratic (WEIRD) societies (Henrich,  Heine  and  Nirenzayan  2010; Wu, Vitak and Zimmer 2020)
+- Based on samples from Western, educated, industrialized, rich, and   democratic (WEIRD) societies (Henrich, Heine and Nirenzayan, 2010; Wu, Vitak and Zimmer, 2020)
 - Findings from such studies are often overgeneralized and the role of specific cultural, social, political, economic, and technological   differences in shaping privacy-related outcomes are often neglected    
 
 ## Value Proposition of Comparative Research
@@ -307,13 +313,6 @@ Two important questions:
 
 ### 2.  What are meaningful units of comparison?
 
-## Goals
-
--   Identifying meaningful units of comparison
-
--   Disentangling how these structures interact with privacy processes at micro, meso- and macro-levels
-
--   Providing a framework and agenda for systematic comparative privacy research
 
 ## Potentially meaningful units of comparison
 
