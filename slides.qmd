@@ -14,7 +14,7 @@ format:
 editor: visual
 ---
 
-# WELCOME TO JERUSALEM! {background="#43464B" background-image="img/jerusalem2.jpeg"}
+## WELCOME TO JERUSALEM! {background="#43464B" background-image="img/jerusalem3.JPG"}
 
 ## Who are we?
 
@@ -90,7 +90,7 @@ Minverva-Gentner Foundation for Israeli-German Science Exchange
 
 ::: {.column width="45%"}
 
-Federmann Cyber Security Research Center -- Cyber Law Program
+Federmann Cyber Security Research Center<br>Cyber Law Program
 
 ![](img/federman.png)
 
@@ -155,6 +155,9 @@ d %>%
   theme_classic()
 ```
 
+
+_European Commission, 2019_
+
 ## Privacy concerns
 
 ```{r}
@@ -177,6 +180,8 @@ d %>%
   theme_classic() +
   theme(legend.position = "none")
 ```
+
+_European Commission, 2019_
 
 ## Reading privacy policies
 
@@ -206,6 +211,8 @@ d %>%
   theme_classic()
 ```
 
+_European Commission, 2019_
+
 ## Reading privacy policies
 
 ```{r}
@@ -228,6 +235,8 @@ d %>%
   theme(legend.position = "none")
 ```
 
+_European Commission, 2019_
+
 ## Cultures
 
 ![](https://licensewithmosaiq.com/wp-content/uploads/2019/06/shutterstock_1303850926-1024x432.jpg)
@@ -242,7 +251,7 @@ d %>%
 
 ## Much more to take into account
 
--   Economies
+-   Economies, Markets, Prices,...
 
 -   Social disparities
 
@@ -258,9 +267,13 @@ Two important questions:
 
 <br>
 
-1.  What is the variable of interest?
+. . .
 
-2.  What are meaningful units of comparison
+### 1.  What is the variable of interest?
+
+. . .
+
+### 2.  What are meaningful units of comparison
 
 ## Goals
 
@@ -278,6 +291,37 @@ Two important questions:
 
 ![](img/entanglement.png)
 
+## Eurobarometer findings
+
+
+
+
+::: {.column width="45%"}
+
+**There is no alternative than to disclose information**
+
+
+![](img/eurobarometer1.png)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+
+**Disclosing is not a big issue for me**
+
+![](img/eurobarometer2.png)
+
+## Comparative perspectives
+
+![](img/entanglement1.png)
+
+## Moderating role of units of comparison
+
+![](img/moderation.png)
+
+
 ## Comparative perspectives
 
 ![](img/entanglement2.png)
@@ -286,7 +330,7 @@ Two important questions:
 
 ... we want to learn more about:
 
-<br>
+<br><br>
 
 1.  "specific cases" (e.g., countries, platforms, groups...)
 
@@ -300,6 +344,8 @@ Two important questions:
 
 ... we are going to:
 
+<br><br>
+
 1.  Generate ideas for comparative projects
 
 2.  Write first proposals
@@ -308,4 +354,4 @@ Two important questions:
 
 4.  Hopefully provide inspiration for future collaboration
 
-# Thank you! {background-color="darkred"}
+# Thank you for coming! Let's begin...
