@@ -250,15 +250,33 @@ _European Commission, 2019_
 
 # Is this meaningful comparative privacy research?{background-color="darkgrey"}
 
-## Specificity in privacy research
+## Biases in Privacy Research 
 
-- Despite a large and growing literature, the majority of studies on privacy  are mono-national
-- Based on samples from Western, educated, industrialized, rich, and   democratic (WEIRD) societies (Henrich, Heine and Nirenzayan, 2010; Wu, Vitak and Zimmer, 2020)
-- Findings from such studies are often overgeneralized and the role of specific cultural, social, political, economic, and technological   differences in shaping privacy-related outcomes are often neglected    
 
+::: {.column width="45%"}
+
+- Majority of studies on privacy  are mono-national
+
+- Based on samples from Western, educated, industrialized, rich, and   democratic (WEIRD) societies (Henrich, Heine and Nirenzayan, 2010)
+
+- Findings from such studies are often overgeneralized
+
+- Role of cultural, social, political, economic, and technological   differences are often neglected   
+
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+
+![](img/pie.png)
+
+:::
 ## Value Proposition of Comparative Research
 
-A comparative understanding of privacy and associated processes...
+**A comparative understanding of privacy and associated processes...**
 
 - would inform long-standing debates about why and under what circumstances privacy should be valued
 
@@ -266,7 +284,9 @@ A comparative understanding of privacy and associated processes...
 
 <br>
 
-It forces us to:
+. . .
+
+**It forces us to:**
 
 - identify and describe differences and similarities
 
